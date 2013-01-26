@@ -1,0 +1,33 @@
+{
+    "front": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAkUlEQVQ4EbWR2w6FMAgEi///z9o1GUI3rT5USQyXswzQE2e3tmEHvRHR9GHE7vkdnwAVtAwNCN78AFAzFwEjX4EGQBUDqxsprrmg0Zu+f0SmVE/spyxPcKEWnUES4AIXK59dmwBvcDG56/57RE1iGv7+23q9Wp6gImt6rLwClWMDgOLMC14HoBkAT6vS4H77ES+0B0BGZiAMOQAAAABJRU5ErkJggg=="
+    },
+    "back": {
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAEG0lEQVR4AQEQBO/7AP////8AAAD/AAAA/wAAAP//////AAAA/wAAAP//////AAAA/wAAAP//////AAAA//////////////////////8AAAAA/////////////////wAAAP///////////wAAAP///////////wAAAP//////AAAA/////////////////wAAAAD//////wAAAP//////AAAA/wAAAP////////////////8AAAD/AAAA//////8AAAD/////////////////AAAAAP////////////////8AAAD//////wAAAP//////AAAA//////8AAAD//////wAAAP////////////////8AAAAA//////8AAAD/AAAA//////8AAAD/////////////////AAAA/wAAAP//////AAAA/wAAAP8AAAD//////wAAAAD//////wAAAP//////AAAA////////////AAAA////////////AAAA//////////////////////8AAAD/AP////8AAAD/////////////////AAAA/wAAAP//////AAAA/wAAAP//////AAAA/wAAAP8AAAD/AAAA//////8A/////////////////////////////////////////////////////////////////////////////////////wD/////////////////////////////////////////////////////////////////////////////////////AP////8AAAD/AAAA/wAAAP8AAAD//////wAAAP8AAAD/AAAA//////8AAAD/AAAA/wAAAP8AAAD/AAAA//////8AAAAA//////////////////////8AAAD/////////////////AAAA////////////////////////////AAAA/wAAAAD//////wAAAP8AAAD//////wAAAP//////AAAA//////8AAAD/AAAA/wAAAP//////AAAA/wAAAP//////AAAAAP//////////////////////AAAA/////////////////wAAAP//////AAAA//////8AAAD///////////8AAAAA//////8AAAD/AAAA//////8AAAD///////////8AAAD///////////8AAAD//////wAAAP///////////wAAAAD//////wAAAP8AAAD//////wAAAP//////AAAA//////8AAAD//////wAAAP//////AAAA////////////AP////8AAAD///////////8AAAD//////wAAAP//////AAAA/////////////////wAAAP////////////////94U85Ot/D8RwAAAABJRU5ErkJggg=="
+    },
+    "images": [{
+        "title": "The Great Wave off Kanagawa",
+        "artist": "Katsushika Hokusai",
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAlElEQVQ4T5VTURbAIAia9z/0Ni19ZOhaX5WJgCb3u660RMRuNKR78iQyJANggu87kADAqpmRnxmQAdDAlOFSStAhdbXB2eTkkkFnYlU5ZGUGJ8Yh6NYFDSLIbw++krMPOjHm4ImRTF60sQJx4K3ynFBjwKpjYteJxcRqZHEutpaftrGVgD8PvWD/I98tJiI9Zh6T+ACrxLHX+1UOkAAAAABJRU5ErkJggg=="
+    }, {
+        "title": "Yellow, Blue and Red",
+        "artist": "Piet Mondrian",
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQ0lEQVQ4jWP4jwQYGBj+4+OjAwYGhv8M6AJD0AAoQRaGGoIpiO4CfDRBAwhoHpYuIDkWsNmIi48OaJOQKDaAZEypFwCjFZWH9RuUmQAAAABJRU5ErkJggg=="
+    }, {
+        "title": "The Holy Ghost and Attendants",
+        "artist": "Ancestral Puebloans",
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAXElEQVQ4jcWQMQ4AIAgD+/9P66RpEEqNgySEAbgWMIoAsFNF2l1LsdqAZweu+gbwEKtyrUCIVruaiJy3OsuUdw4sgPpBC6jOsE/ofmA9US1bgP8OIkQC0onGAccE0QW/XQVkvMwAAAAASUVORK5CYII="
+    }, {
+        "title": "The Creation of Man",
+        "artist": "Michelangelo",
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAYElEQVQ4jb2SQQoAIAgE9/+frktF6mYrQUIX03Gw0B4DXwEAzCkBZkMAVpv36bLB0nX6Iweql8EoQIHQJRKiL7jl4kXRJE7IGgnkvGEJ4tVViPmJbElqmMrKk1IAU7xFB8WVKAMQYvyVAAAAAElFTkSuQmCC"
+    }, {
+        "title": "The Scream",
+        "artist": "Edvard Munch",
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAcElEQVQ4jZWSUQ7AMAhCuf+l3c9mCANt/WmjiK+mKAoABaBcpJpXb02UhwpuKfAVbimo1ijRJDW/J35Jnpx20BpNTGeokZvcHcVooPh6D7p1QnxGE+hEt0T3X6zBtgMNJOFh827gsEeCtP1kcmQwkT1pvrZm1UWQjAAAAABJRU5ErkJggg=="
+    }, {
+        "title": "Two Candals",
+        "artist": "Gerhard Richter",
+        "data": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAARklEQVQ4jWNgYGD4jw////8fL81AiWYoTQcXEDAMvwvQDSI7DPAYgt/ZhMICqwFYFOEzjLjAozgdkBQGFLkAl+JRF+B2AQDop/cXAS7ryAAAAABJRU5ErkJggg=="
+    }]
+}
