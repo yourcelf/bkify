@@ -9,9 +9,10 @@ Example::
 
     ./bkify.py example.json out.pdf
 
-Result: `out.pdf <https://raw.github.com/yourcelf/bkify/master/out.pdf`
+Result: `out.pdf <https://raw.github.com/yourcelf/bkify/master/out.pdf>`_
 
 Options::
+
     usage: bkify.py [-h] [--size SIZE] [--margin MARGIN] [--dpi DPI] [--font FONT]
                     jsonfile output
 
