@@ -25,7 +25,7 @@ def title_panel(data, args, dest, opts=None):
             "-fill", "black", "-font", args.font,
             "-pointsize", str(int(args.dpi * args.size / 8)),
             "-gravity", "West",
-            "caption:{0}\n\n{1}".format(data['title'], data['artist'])
+            u"caption:{0}\n\n{1}".format(data['title'], data['artist'])
         ]  + (opts or []) + [dest]
     subprocess.check_call(args)
     return dest
