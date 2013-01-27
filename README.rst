@@ -8,6 +8,8 @@ Depends on imagemagick (``convert`` and ``montage`` must be in your path).
 Bkify
 -----
 
+Makes art books out of pxlshp.com images.
+
 Example::
 
     ./bkify.py example.json out.pdf
@@ -60,7 +62,7 @@ Example::
 
     ./bkify.py flip_example.json flipout.pdf
 
-Result: `flipout.pdf <https://raw.github.com/yourcelf/bkify/master/flipout.pdf`_
+Result: `flipout.pdf <https://raw.github.com/yourcelf/bkify/master/flipout.pdf>`_
 
 Options::
 
