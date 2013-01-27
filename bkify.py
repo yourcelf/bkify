@@ -53,7 +53,6 @@ def compose(pages, args, top_name, bottom_name, combined_name):
 def make_book(args):
     with open(args.jsonfile) as fh:
         data = json.load(fh)
-    num_panels = (2 + len(data['images'])) / 2
 
     tmp = tempfile.mkdtemp(prefix="bkify")
     tmp_name = lambda n: os.path.join(tmp, n)
