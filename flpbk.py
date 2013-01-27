@@ -23,7 +23,6 @@ def compose(frames, args):
     paperw, paperh = (float(f) * args.dpi for f in args.papersize.split("x"))
     left_margin = (paperw - imagesize - margin) * 72. / args.dpi
     bottom_margin = (paperh - imagesize) * 72. / args.dpi / 2.
-    print paperw, paperh, left_margin, bottom_margin, margin
     subprocess.check_call([
         "convert", "-adjoin",
         "-density", str(args.dpi),
@@ -33,7 +32,7 @@ def compose(frames, args):
         "-adjoin"] + frames + [args.output])
 
 def make_flipbook(args):
-    tmpdir = "tmp" # tempfile.mkdtemp(prefix="flpbk")
+    tmpdir = tempfile.mkdtemp(prefix="flpbk")
     with open(args.jsonfile) as fh:
         data = json.load(fh)
     gifs = []
