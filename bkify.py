@@ -33,21 +33,44 @@ def title_panel(data, args, dest, opts=None):
 def compose(pages, args, top_name, bottom_name, combined_name):
     top = pages[0:len(pages)/2]
     bottom = pages[len(pages)/2:]
+    margin = int(args.margin * args.dpi)
     cmd = ["montage", "-mode", "Concatenate", "-background", "white",
-            "-tile", "x1",
-            "-geometry", "+{0}+{0}".format(int(args.margin * args.dpi))]
+            "-tile", "x1", "-geometry", "+{0}+{0}".format(margin)]
     for imgs, name in ((top, top_name), (bottom, bottom_name)):
         subprocess.check_call(cmd + imgs + [name])
     subprocess.check_call(["convert", top_name, "-rotate", "180", top_name])
+    # Add 1 px for dashed line on exterior.
     subprocess.check_call(["montage",
-        top_name, bottom_name, "-mode", "Concatenate", "-tile", "1x", combined_name])
-    midway = int((args.size + args.margin*2) * args.dpi)
+        top_name, bottom_name, "-mode", "Concatenate", "-tile", "1x",
+        "-geometry", "+1+1", combined_name])
+    unit = (args.size + args.margin*2) * args.dpi
+    height = unit * 2 + 2
+    width = (unit - 1) * len(pages) / 2 + 2
+    dash = args.dpi / 30
+    # Draw lines
     subprocess.check_call(["convert", combined_name,
         "-stroke", "black", "-fill", "white",
-        "-draw", "stroke-dasharray {0} {1} path 'M {2},{3} L {4},{5}'".format(
-            args.dpi / 30, args.dpi / 30,
-            midway, midway, (len(pages)/2 - 1)*midway, midway
-        ), "-density", str(args.dpi), args.output])
+        # Middle
+        "-draw", "stroke-dasharray {0} {0} path 'M {1},{2} L {3},{4}'".format(
+            dash, unit + 1, height/2, width - unit - 1, height/2
+        ),
+        # Top
+        "-draw", "stroke-dasharray {0} {0} path 'M {1},{2} L {3},{4}'".format(
+            dash, 0, 0, width, 0
+        ),
+        # Bottom
+        "-draw", "stroke-dasharray {0} {0} path 'M {1},{2} L {3},{4}'".format(
+            dash, 0, height - 1, width, height - 1
+        ),
+        # Left
+        "-draw", "stroke-dasharray {0} {0} path 'M {1},{2} L {3},{4}'".format(
+            dash, 1, 0, 1, height
+        ),
+        # right
+        "-draw", "stroke-dasharray {0} {0} path 'M {1},{2} L {3},{4}'".format(
+            dash, width - 1, 0, width - 1, height
+        ),
+        "-density", str(args.dpi), args.output])
     return args.output
 
 def make_book(args):
